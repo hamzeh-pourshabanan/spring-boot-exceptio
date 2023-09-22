@@ -11,10 +11,10 @@ public class MySimpleMappingExceptionResolver {
     @Bean
     public SimpleMappingExceptionResolver getSimpleMappingExceptionResolver() {
         SimpleMappingExceptionResolver resolver = new SimpleMappingExceptionResolver();
-        Properties mapping = new Properties();
-        mapping.put("java.lang.ArithmeticException", "mathError"); //key=exception full name. value, view name
-        mapping.put("java.lang.NullPointerException", "nullPointerError");
-        resolver.setExceptionMappings(mapping);
+        Properties map = new Properties();
+        map.put("java.lang.ArithmeticException", "mathError"); //key=exception full name. value, view name
+        map.put("java.lang.NullPointerException", "nullPointerError");
+        resolver.setExceptionMappings(map);
         return resolver;
     }
 }
