@@ -20,11 +20,11 @@ public class UserController {
         return "update";
     }
 
-    @ExceptionHandler(value={java.lang.NullPointerException.class})
-    public ModelAndView handlerNullPointerException(Exception e) {
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("exception", e.toString());
-        modelAndView.setViewName("nullPointerError");
-        return modelAndView;
-    }
+//    @ExceptionHandler(value={java.lang.NullPointerException.class})
+//    public ModelAndView handlerNullPointerException(Exception e) {
+//        ModelAndView modelAndView = new ModelAndView();
+//        modelAndView.addObject("exception", e.toString());
+//        modelAndView.setViewName("nullPointerError");
+//        return modelAndView;
+//    }
 }
